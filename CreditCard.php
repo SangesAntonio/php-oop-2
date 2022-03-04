@@ -1,5 +1,5 @@
 <?php
-class CreditCard
+class Creditcard
 {
     public $owner_name;
     public $number_code;
