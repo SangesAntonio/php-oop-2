@@ -16,6 +16,3 @@ class Customer
         $this->creditcard = $_creditcard;
     }
 }
-
-$creditcard_1 = new Creditcard('Antonio Sanges', 44333556677, 455, '12/ 01');
-$customer1 = new Customer('Antonio', 'Sanges', 022, $creditcard_1);

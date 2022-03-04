@@ -14,3 +14,5 @@ class Catfood extends Product
         $this->ingredients = $_ingredients;
     }
 }
+
+$cibo_1 = new Catfood('fdd25', 8, 'Cibo per gatti', 'Micio buono', 10, 'Pollo e tonno', '70gr', 'Pollo, tonno, latte, riso');
