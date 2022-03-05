@@ -1,20 +1,25 @@
 <?php
+require_once __DIR__ . '/CatFood.php';
 class Cart
 {
-    private $product;
+    private $products;
 
-    function __construct($_product)
+    function __construct($_products)
     {
         $this->getProduct();
     }
 
+    public function addProduct($product)
+    {
+        return $this->products = $product;
+    }
 
     /**
      * Get the value of product
      */
     public function getProduct()
     {
-        return $this->product;
+        return $this->products;
     }
 
     /**
@@ -22,10 +27,11 @@ class Cart
      *
      * @return  self
      */
-    public function setProduct($product)
+    public function setProduct($products)
     {
-        $this->product = $product;
+        $this->products = $products;
 
         return $this;
     }
 }
+$cart1 = new Cart($cibo_1);
